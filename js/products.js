@@ -5,17 +5,17 @@
 const PRODUCTS = [
     {
         id: 1,
-        name: "Wireless Earphones",
+        name: "Wireless Keyboard",
         category: "audio",
         price: 59.99,
         originalPrice: 99.99,
         rating: 4.5,
         reviews: 128,
         description: "Experience premium sound with these wireless earphones featuring active noise cancellation and 30-hour battery life.",
-        image: "https://via.placeholder.com/300x300?text=Wireless+Earphones",
+        image: "/src/black-keyboard-with-letters-f-letters-f.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Earphones+1",
-            "https://via.placeholder.com/300x300?text=Earphones+2"
+            "/src/black-keyboard-with-letters-f-letters-f.png",
+            "/src/untitled-design-66.png"
         ],
         brand: "AudioTech",
         size: "3.2 x 2.1 x 1.8 inches",
@@ -37,18 +37,18 @@ const PRODUCTS = [
         fullDescription: "Our premium wireless earphones are engineered for audiophiles and casual listeners alike. With active noise cancellation technology and crystal-clear sound quality, these earphones deliver an immersive listening experience. The 30-hour battery life ensures your music never stops, while quick charge technology gets you 5 hours of playback in just 15 minutes."
     },
     {
-        id: 2,
-        name: "Professional Drone",
+        id: 2,  
+        name: "VR Headset",
         category: "technology",
-        price: 899.99,
-        originalPrice: 1200.00,
+        price: 499.99,
+        originalPrice: 699.99,
         rating: 4.8,
         reviews: 256,
         description: "Advanced drone with 4K camera, 60-minute flight time, and intelligent flight modes for professional photography.",
-        image: "https://via.placeholder.com/300x300?text=Professional+Drone",
+        image: "/src/vr.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Drone+1",
-            "https://via.placeholder.com/300x300?text=Drone+2"
+            "/src/vr.png",
+            "/src/untitled-design-66.png"
         ],
         brand: "DroneMax",
         size: "14.5 x 10.2 x 5.5 inches",
@@ -78,10 +78,10 @@ const PRODUCTS = [
         rating: 4.6,
         reviews: 342,
         description: "Voice-controlled smart speaker with premium sound quality and seamless smart home integration.",
-        image: "https://via.placeholder.com/300x300?text=Smart+Speaker",
+        image: "/src/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Speaker+1",
-            "https://via.placeholder.com/300x300?text=Speaker+2"
+            "/src/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png",
+            "/src/untitled-design-66.png"
         ],
         brand: "SoundTech",
         size: "4.3 x 4.3 x 3.8 inches",
@@ -111,10 +111,10 @@ const PRODUCTS = [
         rating: 4.7,
         reviews: 189,
         description: "Professional gaming headset with 7.1 surround sound and ultra-comfortable design for extended sessions.",
-        image: "https://via.placeholder.com/300x300?text=Gaming+Headset",
+        image: "/src/headphones-audio-listen.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Headset+1",
-            "https://via.placeholder.com/300x300?text=Headset+2"
+            "/src/headphones-audio-listen.png",
+            "/src/untitled-design-66.png"
         ],
         brand: "GameAudio",
         size: "9.5 x 8.2 x 3.5 inches",
@@ -137,17 +137,17 @@ const PRODUCTS = [
     },
     {
         id: 5,
-        name: "Portable Backpack",
+        name: "Mac Book Air M5",
         category: "gear",
-        price: 79.99,
-        originalPrice: 129.99,
+        price: 899.99,
+        originalPrice: 999.99,
         rating: 4.4,
         reviews: 267,
         description: "Durable travel backpack with smart compartments and anti-theft design for the modern traveler.",
-        image: "https://via.placeholder.com/300x300?text=Portable+Backpack",
+        image: "/src/untitled-design-66.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Backpack+1",
-            "https://via.placeholder.com/300x300?text=Backpack+2"
+            "/src/untitled-design-66.png",
+            "/src/modern-black-smartwatch-with-fabric-strap.png"
         ],
         brand: "TravelGear",
         size: "18 x 12 x 6.5 inches",
@@ -177,10 +177,10 @@ const PRODUCTS = [
         rating: 4.5,
         reviews: 156,
         description: "Precision wireless mouse with ergonomic design and 18-month battery life.",
-        image: "https://via.placeholder.com/300x300?text=Wireless+Mouse",
+        image: "/src/black-wireless-computer-mouse-with-blue-light.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Mouse+1",
-            "https://via.placeholder.com/300x300?text=Mouse+2"
+            "/src/black-wireless-computer-mouse-with-blue-light.png",
+            "/src/black-keyboard-with-letters-f-letters-f.png"
         ],
         brand: "MouseTech",
         size: "2.8 x 4.2 x 1.6 inches",
@@ -210,10 +210,10 @@ const PRODUCTS = [
         rating: 4.3,
         reviews: 412,
         description: "Premium insulated water bottle keeping drinks cold for 24 hours or hot for 12 hours.",
-        image: "https://via.placeholder.com/300x300?text=Water+Bottle",
+        image: "/src/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Bottle+1",
-            "https://via.placeholder.com/300x300?text=Bottle+2"
+            "/src/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png",
+            "/src/untitled-design-66.png"
         ],
         brand: "HydroTech",
         size: "9.5 x 3.2 x 3.2 inches",
@@ -236,17 +236,17 @@ const PRODUCTS = [
     },
     {
         id: 8,
-        name: "USB-C Hub",
+        name: "HDMI Cable",
         category: "computers",
         price: 49.99,
         originalPrice: 89.99,
         rating: 4.6,
         reviews: 234,
         description: "Multi-port USB-C hub with HDMI 4K support and 100W power delivery.",
-        image: "https://via.placeholder.com/300x300?text=USB+Hub",
+        image: "/src/hdmi-cable.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Hub+1",
-            "https://via.placeholder.com/300x300?text=Hub+2"
+            "/src/hdmi-cable.png",
+            "/src/flat-screen-monitor-isolated.png"
         ],
         brand: "ConnectTech",
         size: "4.5 x 2.1 x 0.8 inches",
@@ -269,17 +269,17 @@ const PRODUCTS = [
     },
     {
         id: 9,
-        name: "Webcam 4K",
+        name: "4k Monitor",
         category: "computers",
         price: 129.99,
         originalPrice: 199.99,
         rating: 4.7,
         reviews: 178,
         description: "Professional 4K webcam with auto-focus and built-in microphone for streaming and video calls.",
-        image: "https://via.placeholder.com/300x300?text=4K+Webcam",
+        image: "/src/flat-screen-monitor-isolated.png",
         images: [
-            "https://via.placeholder.com/300x300?text=Webcam+1",
-            "https://via.placeholder.com/300x300?text=Webcam+2"
+            "/src/flat-screen-monitor-isolated.png",
+            "/src/untitled-design-66.png"
         ],
         brand: "CamTech",
         size: "3.5 x 3.5 x 2.8 inches",
@@ -299,7 +299,40 @@ const PRODUCTS = [
             warranty: "1-Year Limited"
         },
         fullDescription: "Upgrade your video conferencing with crystal-clear 4K resolution. The auto-focus technology keeps you sharp and in focus, while the built-in microphone captures pristine audio. Perfect for streaming, content creation, and professional video calls."
-    }
+    },
+{
+    "id": 10,
+    "name": "Apple Watch Series 9",
+    "category": "electronics",
+    "price": 249.99,
+    "originalPrice": 399.00,
+    "rating": 4.8,
+    "reviews": 1248,
+    "description": "Powerful smartwatch featuring the S9 SiP chip, a brighter Always-On display, and magical double tap gesture control.",
+    "image": "/src/modern-black-smartwatch-with-fabric-strap.png",
+    "images": [
+        "/src/modern-black-smartwatch-with-fabric-strap.png",
+        "/src/apple-watch-s9-side-view.png"
+    ],
+    "brand": "Apple",
+    "size": "1.77 x 1.50 x 0.42 inches",
+    "weight": "0.07 pounds",
+    "inStock": true,
+    "features": [
+        "Always-On Retina Display",
+        "S9 SiP with Double Tap Gesture",
+        "Blood Oxygen & ECG Apps",
+        "Crash Detection & Fall Detection",
+        "Swimproof (WR50 water resistance)"
+    ],
+    "specs": {
+        "dimensions": "1.77 x 1.50 x 0.42 inches",
+        "weight": "0.07 pounds",
+        "material": "Aluminum & Sport Loop",
+        "warranty": "1-Year Limited"
+    },
+    "fullDescription": "Apple Watch Series 9 helps you stay connected, active, healthy, and safe. Featuring the S9 SiP, which enables a superbright display and a magical new way to quickly and easily interact with your Apple Watch without touching the screen. Advanced health sensors provide deep insights into your physical and mental health, while overnight sleep tracking monitors your respiratory rate and sleep stages."
+}
 ];
 
 // Load products from localStorage if available

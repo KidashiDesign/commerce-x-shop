@@ -34,6 +34,7 @@ function renderFeaturedProducts() {
 
     // Re-initialize animations for new elements
     initBlurHoverAnimations();
+    initGlowEffect();
 }
 
 /**

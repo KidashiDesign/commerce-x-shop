@@ -160,6 +160,13 @@ body {
     margin-bottom: 30px;
 }
 
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
 /* ============================================
    BUTTONS
    ============================================ */
@@ -193,7 +200,6 @@ body {
     background: transparent;
     color: #2563eb;
     border: 2px solid #2563eb;
-    margin-left: 15px;
 }
 
 .btn-secondary:hover {
@@ -1186,10 +1192,15 @@ body {
         top: auto;
     }
 
-    .btn-secondary {
-        margin-left: 0;
-        margin-top: 10px;
-        display: block;
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
     }
 }
 

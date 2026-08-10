@@ -303,7 +303,7 @@ const PRODUCTS = [
 {
     "id": 10,
     "name": "Apple Watch Series 9",
-    "category": "electronics",
+    "category": "technology",
     "price": 249.99,
     "originalPrice": 399.00,
     "rating": 4.8,

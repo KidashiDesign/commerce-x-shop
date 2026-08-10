@@ -6,35 +6,35 @@ const PRODUCTS = [
     {
         id: 1,
         name: "Wireless Keyboard",
-        category: "audio",
+        category: "computers",
         price: 59.99,
         originalPrice: 99.99,
         rating: 4.5,
         reviews: 128,
-        description: "Experience premium sound with these wireless earphones featuring active noise cancellation and 30-hour battery life.",
+        description: "Sleek wireless keyboard with responsive keys, multi-device pairing, and a 30-hour battery life.",
         image: "/src/black-keyboard-with-letters-f-letters-f.png",
         images: [
             "/src/black-keyboard-with-letters-f-letters-f.png",
             "/src/untitled-design-66.png"
         ],
-        brand: "AudioTech",
-        size: "3.2 x 2.1 x 1.8 inches",
-        weight: "0.3 ounces",
+        brand: "KeyTech",
+        size: "14.2 x 5.1 x 0.8 inches",
+        weight: "0.9 pounds",
         inStock: true,
         features: [
-            "Active Noise Cancellation",
+            "Quiet, Responsive Keys",
             "30-Hour Battery Life",
             "Bluetooth 5.0 Connectivity",
-            "Ergonomic Design",
+            "Multi-Device Pairing",
             "Quick Charge Technology"
         ],
         specs: {
-            dimensions: "3.2 x 2.1 x 1.8 inches",
-            weight: "0.3 ounces",
+            dimensions: "14.2 x 5.1 x 0.8 inches",
+            weight: "0.9 pounds",
             material: "Premium Aluminum & Silicone",
             warranty: "2-Year Limited"
         },
-        fullDescription: "Our premium wireless earphones are engineered for audiophiles and casual listeners alike. With active noise cancellation technology and crystal-clear sound quality, these earphones deliver an immersive listening experience. The 30-hour battery life ensures your music never stops, while quick charge technology gets you 5 hours of playback in just 15 minutes."
+        fullDescription: "Our premium wireless keyboard is engineered for typists and casual users alike. With responsive, quiet keys and reliable Bluetooth connectivity, it delivers a smooth and comfortable typing experience. The 30-hour battery life keeps you working without interruption, while quick charge technology gets you hours of use from just a short top-up. Seamlessly pair and switch between multiple devices."
     },
     {
         id: 2,  
@@ -44,30 +44,30 @@ const PRODUCTS = [
         originalPrice: 699.99,
         rating: 4.8,
         reviews: 256,
-        description: "Advanced drone with 4K camera, 60-minute flight time, and intelligent flight modes for professional photography.",
+        description: "Immersive VR headset with high-resolution displays, wide field of view, and precise motion tracking.",
         image: "/src/vr.png",
         images: [
             "/src/vr.png",
             "/src/untitled-design-66.png"
         ],
-        brand: "DroneMax",
-        size: "14.5 x 10.2 x 5.5 inches",
-        weight: "2.5 pounds",
+        brand: "VisionTech",
+        size: "7.5 x 4.5 x 3.8 inches",
+        weight: "1.1 pounds",
         inStock: true,
         features: [
-            "4K Ultra HD Camera",
-            "60-Minute Flight Time",
-            "Obstacle Avoidance",
-            "Intelligent Flight Modes",
-            "15km Video Transmission"
+            "High-Resolution Displays",
+            "110° Wide Field of View",
+            "6DoF Motion Tracking",
+            "Adjustable, Comfort-Fit Strap",
+            "Built-in Spatial Audio"
         ],
         specs: {
-            dimensions: "14.5 x 10.2 x 5.5 inches",
-            weight: "2.5 pounds",
-            material: "Carbon Fiber & Aircraft Aluminum",
+            dimensions: "7.5 x 4.5 x 3.8 inches",
+            weight: "1.1 pounds",
+            material: "Premium Plastic & Foam Padding",
             warranty: "2-Year Limited"
         },
-        fullDescription: "The professional-grade drone is designed for content creators and aerial photographers. Its advanced 4K camera system captures stunning footage with exceptional color accuracy. With intelligent flight modes and obstacle avoidance, even beginners can capture professional-quality aerial shots. The 60-minute flight time ensures you can capture everything you need in a single charge."
+        fullDescription: "Step into fully immersive virtual worlds with our advanced VR headset. Its high-resolution displays and wide field of view deliver stunningly sharp, lifelike visuals, while precise 6-degrees-of-freedom motion tracking keeps every movement responsive and natural. The adjustable, comfort-fit strap and built-in spatial audio make extended gaming and exploration sessions comfortable and immersive."
     },
     {
         id: 3,
@@ -138,35 +138,35 @@ const PRODUCTS = [
     {
         id: 5,
         name: "Mac Book Air M5",
-        category: "gear",
+        category: "computers",
         price: 899.99,
         originalPrice: 999.99,
         rating: 4.4,
         reviews: 267,
-        description: "Durable travel backpack with smart compartments and anti-theft design for the modern traveler.",
+        description: "Ultra-thin laptop with the M5 chip, all-day battery life, and a stunning Liquid Retina display.",
         image: "/src/untitled-design-66.png",
         images: [
             "/src/untitled-design-66.png",
             "/src/modern-black-smartwatch-with-fabric-strap.png"
         ],
-        brand: "TravelGear",
-        size: "18 x 12 x 6.5 inches",
-        weight: "1.8 pounds",
+        brand: "Apple",
+        size: "11.97 x 8.46 x 0.44 inches",
+        weight: "2.7 pounds",
         inStock: true,
         features: [
-            "Anti-Theft Design",
-            "USB Charging Port",
-            "Water-Resistant Material",
-            "Smart Organization",
-            "Ergonomic Support"
+            "M5 Chip Performance",
+            "Up to 18-Hour Battery Life",
+            "13.6-inch Liquid Retina Display",
+            "Fanless, Silent Design",
+            "1080p FaceTime HD Camera"
         ],
         specs: {
-            dimensions: "18 x 12 x 6.5 inches",
-            weight: "1.8 pounds",
-            material: "Durable Polyester & Nylon",
-            warranty: "Lifetime Warranty"
+            dimensions: "11.97 x 8.46 x 0.44 inches",
+            weight: "2.7 pounds",
+            material: "Recycled Aluminum",
+            warranty: "1-Year Limited"
         },
-        fullDescription: "Perfect for business travelers and adventure seekers alike. This backpack features hidden pockets and compartments to keep your valuables secure. The built-in USB charging port lets you power your devices on the go, while the water-resistant material protects your gear from the elements."
+        fullDescription: "Perfect for work, study, and everything in between. This ultra-thin laptop features the powerful M5 chip for fast, fanless performance and up to 18 hours of battery life on a single charge. The stunning 13.6-inch Liquid Retina display delivers crisp visuals and vivid color, while the sleek all-aluminum design makes it easy to take anywhere."
     },
     {
         id: 6,
@@ -242,30 +242,30 @@ const PRODUCTS = [
         originalPrice: 89.99,
         rating: 4.6,
         reviews: 234,
-        description: "Multi-port USB-C hub with HDMI 4K support and 100W power delivery.",
+        description: "High-speed HDMI cable with 4K/8K support, braided nylon jacket, and gold-plated connectors.",
         image: "/src/hdmi-cable.png",
         images: [
             "/src/hdmi-cable.png",
             "/src/flat-screen-monitor-isolated.png"
         ],
         brand: "ConnectTech",
-        size: "4.5 x 2.1 x 0.8 inches",
+        size: "6 feet (1.8m) length",
         weight: "0.3 pounds",
         inStock: true,
         features: [
-            "7 Ports",
-            "4K HDMI Support",
-            "100W Power Delivery",
-            "Aluminum Design",
-            "Plug & Play"
+            "4K@60Hz & 8K@30Hz Support",
+            "Gold-Plated Connectors",
+            "Braided Nylon Jacket",
+            "18Gbps High-Speed Transfer",
+            "Backward Compatible"
         ],
         specs: {
-            dimensions: "4.5 x 2.1 x 0.8 inches",
+            dimensions: "6 feet (1.8m) length",
             weight: "0.3 pounds",
-            material: "Premium Aluminum",
+            material: "Braided Nylon & Aluminum Housing",
             warranty: "1-Year Limited"
         },
-        fullDescription: "Expand your laptop connectivity with this powerful USB-C hub. With 7 ports including 4K HDMI output, multiple USB 3.0 ports, and 100W power delivery, you can connect all your peripherals simultaneously. The compact aluminum design is perfect for portable workspaces."
+        fullDescription: "Connect your devices with confidence using this high-speed HDMI cable. Supporting crisp 4K@60Hz and 8K@30Hz video transmission, it's built for gaming, streaming, and home theater setups. The durable braided nylon jacket resists tangling and wear, while gold-plated connectors ensure a reliable, corrosion-resistant connection every time."
     },
     {
         id: 9,
@@ -275,35 +275,35 @@ const PRODUCTS = [
         originalPrice: 199.99,
         rating: 4.7,
         reviews: 178,
-        description: "Professional 4K webcam with auto-focus and built-in microphone for streaming and video calls.",
+        description: "27-inch 4K UHD monitor with vivid color accuracy, wide viewing angles, and multiple connectivity options.",
         image: "/src/flat-screen-monitor-isolated.png",
         images: [
             "/src/flat-screen-monitor-isolated.png",
             "/src/untitled-design-66.png"
         ],
-        brand: "CamTech",
-        size: "3.5 x 3.5 x 2.8 inches",
-        weight: "0.5 pounds",
+        brand: "ViewTech",
+        size: "24.1 x 14.3 x 8.5 inches",
+        weight: "9.8 pounds",
         inStock: true,
         features: [
-            "4K Ultra HD",
-            "Auto-Focus",
-            "Built-in Microphone",
-            "Wide Field of View",
-            "USB Plug & Play"
+            "27-inch 4K Ultra HD Display",
+            "99% sRGB Color Accuracy",
+            "HDMI & DisplayPort Inputs",
+            "Adjustable Tilt Stand",
+            "Ultra-Slim Bezel Design"
         ],
         specs: {
-            dimensions: "3.5 x 3.5 x 2.8 inches",
-            weight: "0.5 pounds",
+            dimensions: "24.1 x 14.3 x 8.5 inches",
+            weight: "9.8 pounds",
             material: "Premium Plastic & Glass",
             warranty: "1-Year Limited"
         },
-        fullDescription: "Upgrade your video conferencing with crystal-clear 4K resolution. The auto-focus technology keeps you sharp and in focus, while the built-in microphone captures pristine audio. Perfect for streaming, content creation, and professional video calls."
+        fullDescription: "Upgrade your workspace with crystal-clear 4K Ultra HD resolution. This 27-inch display delivers vivid, accurate colors and wide viewing angles, making it ideal for creative work, gaming, and everyday productivity. Multiple HDMI and DisplayPort inputs make it easy to connect your laptop, console, or desktop, while the adjustable stand lets you find the perfect viewing angle."
     },
 {
     "id": 10,
     "name": "Apple Watch Series 9",
-    "category": "electronics",
+    "category": "technology",
     "price": 249.99,
     "originalPrice": 399.00,
     "rating": 4.8,

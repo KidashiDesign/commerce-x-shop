@@ -188,6 +188,10 @@
     animation: fadeIn 0.8s ease-out;
 }
 
+.why-logo {
+    animation: slideInRight 0.8s ease-out;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

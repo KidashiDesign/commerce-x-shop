@@ -12,10 +12,10 @@ const PRODUCTS = [
         rating: 4.5,
         reviews: 128,
         description: "Experience premium sound with these wireless earphones featuring active noise cancellation and 30-hour battery life.",
-        image: "/src/black-keyboard-with-letters-f-letters-f.png",
+        image: "/src/images/black-keyboard-with-letters-f-letters-f.png",
         images: [
-            "/src/black-keyboard-with-letters-f-letters-f.png",
-            "/src/untitled-design-66.png"
+            "/src/images/black-keyboard-with-letters-f-letters-f.png",
+            "/src/images/untitled-design-66.png"
         ],
         brand: "AudioTech",
         size: "3.2 x 2.1 x 1.8 inches",
@@ -45,10 +45,10 @@ const PRODUCTS = [
         rating: 4.8,
         reviews: 256,
         description: "Advanced drone with 4K camera, 60-minute flight time, and intelligent flight modes for professional photography.",
-        image: "/src/vr.png",
+        image: "/src/images/vr.png",
         images: [
-            "/src/vr.png",
-            "/src/untitled-design-66.png"
+            "/src/images/vr.png",
+            "/src/images/untitled-design-66.png"
         ],
         brand: "DroneMax",
         size: "14.5 x 10.2 x 5.5 inches",
@@ -78,10 +78,10 @@ const PRODUCTS = [
         rating: 4.6,
         reviews: 342,
         description: "Voice-controlled smart speaker with premium sound quality and seamless smart home integration.",
-        image: "/src/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png",
+        image: "/src/images/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png",
         images: [
-            "/src/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png",
-            "/src/untitled-design-66.png"
+            "/src/images/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png",
+            "/src/images/untitled-design-66.png"
         ],
         brand: "SoundTech",
         size: "4.3 x 4.3 x 3.8 inches",
@@ -111,10 +111,10 @@ const PRODUCTS = [
         rating: 4.7,
         reviews: 189,
         description: "Professional gaming headset with 7.1 surround sound and ultra-comfortable design for extended sessions.",
-        image: "/src/headphones-audio-listen.png",
+        image: "/src/images/headphones-audio-listen.png",
         images: [
-            "/src/headphones-audio-listen.png",
-            "/src/untitled-design-66.png"
+            "/src/images/headphones-audio-listen.png",
+            "/src/images/untitled-design-66.png"
         ],
         brand: "GameAudio",
         size: "9.5 x 8.2 x 3.5 inches",
@@ -144,10 +144,10 @@ const PRODUCTS = [
         rating: 4.4,
         reviews: 267,
         description: "Durable travel backpack with smart compartments and anti-theft design for the modern traveler.",
-        image: "/src/untitled-design-66.png",
+        image: "/src/images/untitled-design-66.png",
         images: [
-            "/src/untitled-design-66.png",
-            "/src/modern-black-smartwatch-with-fabric-strap.png"
+            "/src/images/untitled-design-66.png",
+            "/src/images/modern-black-smartwatch-with-fabric-strap.png"
         ],
         brand: "TravelGear",
         size: "18 x 12 x 6.5 inches",
@@ -177,10 +177,10 @@ const PRODUCTS = [
         rating: 4.5,
         reviews: 156,
         description: "Precision wireless mouse with ergonomic design and 18-month battery life.",
-        image: "/src/black-wireless-computer-mouse-with-blue-light.png",
+        image: "/src/images/black-wireless-computer-mouse-with-blue-light.png",
         images: [
-            "/src/black-wireless-computer-mouse-with-blue-light.png",
-            "/src/black-keyboard-with-letters-f-letters-f.png"
+            "/src/images/black-wireless-computer-mouse-with-blue-light.png",
+            "/src/images/black-keyboard-with-letters-f-letters-f.png"
         ],
         brand: "MouseTech",
         size: "2.8 x 4.2 x 1.6 inches",
@@ -210,10 +210,10 @@ const PRODUCTS = [
         rating: 4.3,
         reviews: 412,
         description: "Premium insulated water bottle keeping drinks cold for 24 hours or hot for 12 hours.",
-        image: "/src/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png",
+        image: "/src/images/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png",
         images: [
-            "/src/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png",
-            "/src/untitled-design-66.png"
+            "/src/images/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png",
+            "/src/images/untitled-design-66.png"
         ],
         brand: "HydroTech",
         size: "9.5 x 3.2 x 3.2 inches",
@@ -243,10 +243,10 @@ const PRODUCTS = [
         rating: 4.6,
         reviews: 234,
         description: "Multi-port USB-C hub with HDMI 4K support and 100W power delivery.",
-        image: "/src/hdmi-cable.png",
+        image: "/src/images/hdmi-cable.png",
         images: [
-            "/src/hdmi-cable.png",
-            "/src/flat-screen-monitor-isolated.png"
+            "/src/images/hdmi-cable.png",
+            "/src/images/flat-screen-monitor-isolated.png"
         ],
         brand: "ConnectTech",
         size: "4.5 x 2.1 x 0.8 inches",
@@ -276,10 +276,10 @@ const PRODUCTS = [
         rating: 4.7,
         reviews: 178,
         description: "Professional 4K webcam with auto-focus and built-in microphone for streaming and video calls.",
-        image: "/src/flat-screen-monitor-isolated.png",
+        image: "/src/images/flat-screen-monitor-isolated.png",
         images: [
-            "/src/flat-screen-monitor-isolated.png",
-            "/src/untitled-design-66.png"
+            "/src/images/flat-screen-monitor-isolated.png",
+            "/src/images/untitled-design-66.png"
         ],
         brand: "CamTech",
         size: "3.5 x 3.5 x 2.8 inches",
@@ -309,10 +309,10 @@ const PRODUCTS = [
     "rating": 4.8,
     "reviews": 1248,
     "description": "Powerful smartwatch featuring the S9 SiP chip, a brighter Always-On display, and magical double tap gesture control.",
-    "image": "/src/modern-black-smartwatch-with-fabric-strap.png",
+    "image": "/src/images/modern-black-smartwatch-with-fabric-strap.png",
     "images": [
-        "/src/modern-black-smartwatch-with-fabric-strap.png",
-        "/src/apple-watch-s9-side-view.png"
+        "/src/images/modern-black-smartwatch-with-fabric-strap.png",
+        "/src/images/apple-watch-s9-side-view.png"
     ],
     "brand": "Apple",
     "size": "1.77 x 1.50 x 0.42 inches",

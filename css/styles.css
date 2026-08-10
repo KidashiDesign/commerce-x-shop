@@ -1194,13 +1194,7 @@ body {
 
     .hero-buttons {
         flex-direction: column;
-        align-items: stretch;
-        width: 100%;
-    }
-
-    .hero-buttons .btn {
-        width: 100%;
-        text-align: center;
+        align-items: flex-start;
     }
 }
 

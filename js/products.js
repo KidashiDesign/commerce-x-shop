@@ -14,8 +14,7 @@ const PRODUCTS = [
         description: "Experience premium sound with these wireless earphones featuring active noise cancellation and 30-hour battery life.",
         image: "/src/black-keyboard-with-letters-f-letters-f.png",
         images: [
-            "/src/black-keyboard-with-letters-f-letters-f.png",
-            "/src/untitled-design-66.png"
+            "/src/black-keyboard-with-letters-f-letters-f.png"
         ],
         brand: "AudioTech",
         size: "3.2 x 2.1 x 1.8 inches",
@@ -47,8 +46,7 @@ const PRODUCTS = [
         description: "Advanced drone with 4K camera, 60-minute flight time, and intelligent flight modes for professional photography.",
         image: "/src/vr.png",
         images: [
-            "/src/vr.png",
-            "/src/untitled-design-66.png"
+            "/src/vr.png"
         ],
         brand: "DroneMax",
         size: "14.5 x 10.2 x 5.5 inches",
@@ -80,8 +78,7 @@ const PRODUCTS = [
         description: "Voice-controlled smart speaker with premium sound quality and seamless smart home integration.",
         image: "/src/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png",
         images: [
-            "/src/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png",
-            "/src/untitled-design-66.png"
+            "/src/smart_speaker_virtual_assistant_it_is_used_keep_home_connected_give.png"
         ],
         brand: "SoundTech",
         size: "4.3 x 4.3 x 3.8 inches",
@@ -113,8 +110,7 @@ const PRODUCTS = [
         description: "Professional gaming headset with 7.1 surround sound and ultra-comfortable design for extended sessions.",
         image: "/src/headphones-audio-listen.png",
         images: [
-            "/src/headphones-audio-listen.png",
-            "/src/untitled-design-66.png"
+            "/src/headphones-audio-listen.png"
         ],
         brand: "GameAudio",
         size: "9.5 x 8.2 x 3.5 inches",
@@ -212,8 +208,7 @@ const PRODUCTS = [
         description: "Premium insulated water bottle keeping drinks cold for 24 hours or hot for 12 hours.",
         image: "/src/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png",
         images: [
-            "/src/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png",
-            "/src/untitled-design-66.png"
+            "/src/grey_reusable_bottle_grey_background_close_up_zero_waste_plastic.png"
         ],
         brand: "HydroTech",
         size: "9.5 x 3.2 x 3.2 inches",
@@ -278,8 +273,7 @@ const PRODUCTS = [
         description: "Professional 4K webcam with auto-focus and built-in microphone for streaming and video calls.",
         image: "/src/flat-screen-monitor-isolated.png",
         images: [
-            "/src/flat-screen-monitor-isolated.png",
-            "/src/untitled-design-66.png"
+            "/src/flat-screen-monitor-isolated.png"
         ],
         brand: "CamTech",
         size: "3.5 x 3.5 x 2.8 inches",

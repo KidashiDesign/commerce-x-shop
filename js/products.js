@@ -5,8 +5,8 @@
 const PRODUCTS = [
     {
         id: 1,
-        name: "Wireless Keyboard",
-        category: "audio",
+        name: "Wireless Apple Keyboard",
+        category: "gear",
         price: 59.99,
         originalPrice: 99.99,
         rating: 4.5,
@@ -37,14 +37,14 @@ const PRODUCTS = [
         fullDescription: "Our premium wireless earphones are engineered for audiophiles and casual listeners alike. With active noise cancellation technology and crystal-clear sound quality, these earphones deliver an immersive listening experience. The 30-hour battery life ensures your music never stops, while quick charge technology gets you 5 hours of playback in just 15 minutes."
     },
     {
-        id: 2,  
+        id: 2,
         name: "VR Headset",
         category: "technology",
         price: 499.99,
         originalPrice: 699.99,
         rating: 4.8,
         reviews: 256,
-        description: "Advanced drone with 4K camera, 60-minute flight time, and intelligent flight modes for professional photography.",
+        description: "Advanced VR Headset with 4K per eye display, 8-hour battery life, and intelligent tracking for professional simulation and design.",
         image: "/src/vr.png",
         images: [
             "/src/vr.png",
@@ -72,7 +72,7 @@ const PRODUCTS = [
     {
         id: 3,
         name: "Smart Speaker",
-        category: "technology",
+        category: "audio",
         price: 69.99,
         originalPrice: 99.99,
         rating: 4.6,
@@ -138,7 +138,7 @@ const PRODUCTS = [
     {
         id: 5,
         name: "Mac Book Air M5",
-        category: "gear",
+        category: "computer",
         price: 899.99,
         originalPrice: 999.99,
         rating: 4.4,
@@ -171,7 +171,7 @@ const PRODUCTS = [
     {
         id: 6,
         name: "Wireless Mouse",
-        category: "computers",
+        category: "gear",
         price: 39.99,
         originalPrice: 79.99,
         rating: 4.5,
@@ -237,7 +237,7 @@ const PRODUCTS = [
     {
         id: 8,
         name: "HDMI Cable",
-        category: "computers",
+        category: "gear",
         price: 49.99,
         originalPrice: 89.99,
         rating: 4.6,

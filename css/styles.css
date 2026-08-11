@@ -574,6 +574,15 @@ body {
     color: white;
 }
 
+.footer-section .social-links a {
+    transition: none;
+}
+
+.footer-section .social-links a:hover {
+    background: #374151;
+    color: inherit;
+}
+
 .footer-bottom {
     border-top: 1px solid #374151;
     padding: 30px 24px 0;

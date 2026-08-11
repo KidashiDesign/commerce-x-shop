@@ -224,6 +224,7 @@ function addToCart() {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartBadge();
 
     // Show confirmation
     showNotification(`✓ Added ${selectedQuantity} ${currentProduct.name} to cart!`);

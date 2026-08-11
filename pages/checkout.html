@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Commerce X</title>
+    <link rel="icon" type="image/svg+xml" href="../images/x-commerce-bildmarke.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><img src="../images/x-commerce-web.svg" alt="Commerce X Logo" class="nav-logo-img"></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../shop.html" class="nav-link">Shop</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-cart-item">
+                    <a href="../cart.html" class="nav-cart-link" aria-label="Shopping cart">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo banner -->
+    <div class="demo-banner">
+        Demo checkout — for demonstration purposes only. No real payment is processed, no card data is transmitted anywhere, and no order is actually charged or shipped.
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <a href="../cart.html">Cart</a>
+            <span>/</span>
+            <span>Checkout</span>
+        </div>
+    </div>
+
+    <!-- Checkout -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-layout">
+                <form class="checkout-form" id="checkoutForm">
+                    <div class="checkout-block">
+                        <h2><span class="checkout-step">1</span> Shipping Information</h2>
+                        <div class="form-group">
+                            <label for="checkoutName">Full Name *</label>
+                            <input type="text" id="checkoutName" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkoutEmail">Email Address *</label>
+                            <input type="email" id="checkoutEmail" name="email" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkoutAddress">Street Address *</label>
+                            <input type="text" id="checkoutAddress" name="address" required autocomplete="street-address">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkoutCity">City *</label>
+                                <input type="text" id="checkoutCity" name="city" required autocomplete="address-level2">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkoutZip">ZIP / Postal Code *</label>
+                                <input type="text" id="checkoutZip" name="zip" required autocomplete="postal-code">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkoutCountry">Country *</label>
+                            <select id="checkoutCountry" name="country" required autocomplete="country-name">
+                                <option value="">Select a country</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="checkout-block">
+                        <h2><span class="checkout-step">2</span> Payment Method</h2>
+                        <p class="checkout-demo-note">⚠ Demo only — no real payment provider is contacted. Do not enter real card details.</p>
+
+                        <div class="payment-tabs">
+                            <button type="button" class="payment-tab active" data-panel="panelCard">💳 Card</button>
+                            <button type="button" class="payment-tab" data-panel="panelPaypal">🅿️ PayPal</button>
+                            <button type="button" class="payment-tab" data-panel="panelGooglePay">📱 Google Pay</button>
+                        </div>
+
+                        <div class="payment-panel active" id="panelCard">
+                            <div class="form-group">
+                                <label for="cardName">Name on Card *</label>
+                                <input type="text" id="cardName" name="cardName" placeholder="Jane Doe" required autocomplete="cc-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number *</label>
+                                <input type="text" id="cardNumber" name="cardNumber" placeholder="4242 4242 4242 4242" inputmode="numeric" required autocomplete="cc-number">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cardExpiry">Expiry Date *</label>
+                                    <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM / YY" inputmode="numeric" required autocomplete="cc-exp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardCvc">CVC *</label>
+                                    <input type="text" id="cardCvc" name="cardCvc" placeholder="123" inputmode="numeric" required autocomplete="cc-csc">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="payment-panel" id="panelPaypal">
+                            <p>You'll be redirected to PayPal to complete your purchase securely.</p>
+                            <div class="payment-mock-btn payment-mock-paypal">Continue with PayPal (Demo)</div>
+                        </div>
+
+                        <div class="payment-panel" id="panelGooglePay">
+                            <p>Pay quickly using the card saved to your Google account.</p>
+                            <div class="payment-mock-btn payment-mock-googlepay">Pay with Google Pay (Demo)</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg checkout-submit">Place Order (Demo)</button>
+                </form>
+
+                <aside class="checkout-summary">
+                    <h2>Order Summary</h2>
+                    <div class="checkout-items" id="checkoutItems">
+                        <!-- Items rendered via JavaScript -->
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="checkoutSubtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="checkoutShipping">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Estimated Tax</span>
+                        <span id="checkoutTax">$0.00</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Total</span>
+                        <span id="checkoutTotal">$0.00</span>
+                    </div>
+
+                    <div class="payment-methods">
+                        <h3>We accept</h3>
+                        <div class="payment-icons">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 32'%3E%3Crect fill='%231434CB' width='48' height='32' rx='4'/%3E%3Ctext x='24' y='20' fill='white' font-size='14' text-anchor='middle' font-weight='bold'%3EPayPal%3C/text%3E%3C/svg%3E" alt="PayPal">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 32'%3E%3Crect fill='%231F51BA' width='48' height='32' rx='4'/%3E%3Ctext x='24' y='20' fill='white' font-size='10' text-anchor='middle'%3EStripe%3C/text%3E%3C/svg%3E" alt="Stripe">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 32'%3E%3Crect fill='%23003D82' width='48' height='32' rx='4'/%3E%3Ctext x='24' y='20' fill='white' font-size='10' text-anchor='middle'%3EMastercard%3C/text%3E%3C/svg%3E" alt="Mastercard">
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Commerce X</h4>
+                <p>Your trusted source for premium tech gadgets and accessories</p>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Commerce X. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/checkout.js"></script>
+</body>
+</html>

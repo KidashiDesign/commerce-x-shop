@@ -196,6 +196,10 @@ body {
     margin-left: 15px;
 }
 
+.why-text .btn-secondary {
+    margin-left: 0;
+}
+
 .btn-secondary:hover {
     background: #2563eb;
     color: white;
@@ -560,7 +564,8 @@ body {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: #374151;
+    background: #d1d5db;
+    color: #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;

@@ -234,7 +234,6 @@ body {
     text-align: center;
     transition: all 0.3s;
     border: 1px solid #e5e7eb;
-    cursor: pointer;
 }
 
 .category-card:hover {

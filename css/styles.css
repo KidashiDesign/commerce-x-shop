@@ -560,7 +560,8 @@ body {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: #374151;
+    background: #d1d5db;
+    color: #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;

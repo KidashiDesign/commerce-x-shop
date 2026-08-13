@@ -102,48 +102,6 @@
 }
 
 /* ============================================
-   SHIMMER BUTTON
-   ============================================ */
-
-@keyframes shimmer-spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.btn-shimmer {
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-    border-radius: 100px;
-}
-
-.btn-shimmer::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    inset: -2px;
-    border-radius: inherit;
-    background: conic-gradient(
-        from 0deg,
-        transparent 0deg,
-        rgba(255, 255, 255, 0.8) 25deg,
-        transparent 50deg,
-        transparent 360deg
-    );
-    animation: shimmer-spin 3s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.btn-shimmer:hover::after {
-    opacity: 1;
-}
-
-/* ============================================
    CATEGORY CARD ANIMATIONS
    ============================================ */
 

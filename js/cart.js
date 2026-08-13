@@ -61,6 +61,9 @@ function updateCartBadge() {
         badge.textContent = count;
         badge.style.display = count > 0 ? 'flex' : 'none';
     });
+    document.querySelectorAll('.nav-cart-link').forEach(link => {
+        link.classList.toggle('active', count > 0);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', updateCartBadge);

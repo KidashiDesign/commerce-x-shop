@@ -572,6 +572,7 @@ body {
     height: 40px;
     background: #d1d5db;
     color: #ffffff;
+    text-decoration: none;
     border-radius: 50%;
     display: flex;
     align-items: center;

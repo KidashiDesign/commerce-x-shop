@@ -376,6 +376,188 @@ body {
 }
 
 /* ============================================
+   SPOTLIGHT / FEATURED PRODUCT
+   ============================================ */
+
+.spotlight-section {
+    padding: 80px 0;
+}
+
+.spotlight-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.spotlight-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    gap: 30px;
+    align-items: start;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 30px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.spotlight-card:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.spotlight-image {
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    background: #f3f4f6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.spotlight-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.spotlight-wishlist {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.spotlight-wishlist.active {
+    color: #2563eb;
+}
+
+.spotlight-wishlist.active svg {
+    fill: #2563eb;
+}
+
+.spotlight-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.spotlight-details h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.spotlight-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    color: #6b7280;
+}
+
+.spotlight-rating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #1f2937;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.spotlight-rating-badge svg {
+    fill: #fbbf24;
+}
+
+.spotlight-specs {
+    list-style: disc;
+    padding-left: 18px;
+    color: #6b7280;
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+.spotlight-compare {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9em;
+    color: #1f2937;
+    margin-top: 4px;
+}
+
+.spotlight-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.spotlight-price-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spotlight-price {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.spotlight-assured {
+    color: #2563eb;
+}
+
+.spotlight-price-compare {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+}
+
+.spotlight-original-price {
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.spotlight-discount {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.spotlight-note {
+    font-size: 0.85em;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.spotlight-cta {
+    align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+    .spotlight-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
    WHY DIFFERENT SECTION
    ============================================ */
 

@@ -21,7 +21,7 @@ function renderFooterProducts() {
         products = products.filter(product => product.id !== currentId);
     }
     products = products.filter(product => !EXCLUDED_IDS.includes(product.id));
-    products = products.slice(0, 4);
+    products = products.slice(0, 3);
 
     container.innerHTML = products.map(product => `
         <a href="${linkPrefix}product.html?id=${product.id}" class="product-card">

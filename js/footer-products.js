@@ -14,10 +14,13 @@ function renderFooterProducts() {
     const params = new URLSearchParams(window.location.search);
     const currentId = parseInt(params.get('id'), 10);
 
+    const EXCLUDED_IDS = [4]; // Gaming Headset
+
     let products = getProducts();
     if (!Number.isNaN(currentId)) {
         products = products.filter(product => product.id !== currentId);
     }
+    products = products.filter(product => !EXCLUDED_IDS.includes(product.id));
     products = products.slice(0, 4);
 
     container.innerHTML = products.map(product => `

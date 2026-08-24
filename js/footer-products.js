@@ -15,6 +15,7 @@ function renderFooterProducts() {
     const currentId = parseInt(params.get('id'), 10);
 
     let products = getProducts();
+    products = products.filter(product => product.id !== 4);
     if (!Number.isNaN(currentId)) {
         products = products.filter(product => product.id !== currentId);
     }

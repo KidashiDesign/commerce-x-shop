@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart - Commerce X</title>
+    <title>Warranties - Commerce X</title>
     <link rel="icon" type="image/svg+xml" href="images/x-commerce-bildmarke.svg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -20,7 +20,7 @@
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li class="nav-cart-item">
-                    <a href="cart.html" class="nav-cart-link active" aria-label="Shopping cart">
+                    <a href="cart.html" class="nav-cart-link" aria-label="Shopping cart">
                         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                         <span class="cart-count">0</span>
                     </a>
@@ -34,58 +34,35 @@
         </div>
     </nav>
 
-    <!-- Demo banner -->
-    <div class="demo-banner">
-        Demo shop — this checkout is a visual demonstration only. No real payment is processed and no data is charged or transmitted to a payment provider.
-    </div>
-
-    <!-- Cart Header -->
-    <section class="shop-header">
+    <!-- Page Header -->
+    <section class="contact-header">
         <div class="container">
-            <h1>Your Cart</h1>
-            <p>Review your items before checking out</p>
+            <h1>Warranties</h1>
+            <p>What's covered, and for how long</p>
         </div>
     </section>
 
-    <!-- Cart Content -->
-    <section class="cart-section">
+    <!-- Warranties Content -->
+    <section class="why-different">
         <div class="container">
-            <div class="cart-empty" id="cartEmpty" style="display:none;">
-                <div class="cart-empty-icon">
-                    <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                </div>
-                <h2>Your cart is empty</h2>
-                <p>Looks like you haven't added anything yet.</p>
-                <a href="shop.html" class="btn btn-primary btn-lg">Browse Products</a>
-            </div>
-
-            <div class="cart-layout" id="cartItemsWrapper">
-                <div class="cart-items" id="cartItems">
-                    <!-- Cart items rendered via JavaScript -->
-                </div>
-
-                <aside class="cart-summary" id="cartSummary">
-                    <h2>Order Summary</h2>
-                    <div class="summary-row">
-                        <span>Subtotal</span>
-                        <span id="cartSubtotal">$0.00</span>
-                    </div>
-                    <div class="summary-row">
-                        <span>Shipping</span>
-                        <span id="cartShipping">$0.00</span>
-                    </div>
-                    <div class="summary-row">
-                        <span>Estimated Tax</span>
-                        <span id="cartTax">$0.00</span>
-                    </div>
-                    <div class="summary-row summary-total">
-                        <span>Total</span>
-                        <span id="cartTotal">$0.00</span>
-                    </div>
-                    <a href="pages/checkout.html" class="btn btn-primary btn-lg cart-checkout-btn">Proceed to Checkout</a>
-                    <a href="shop.html" class="cart-continue-link">← Continue Shopping</a>
-                    <p class="cart-demo-note">This is a demo store. No real order will be placed or paid for.</p>
-                </aside>
+            <div class="why-text">
+                <h2>2-Year Limited Warranty</h2>
+                <p>All Commerce X products come with a 2-year limited warranty covering manufacturing defects in materials and workmanship from the original date of purchase.</p>
+                <h2>What's Covered</h2>
+                <ul>
+                    <li>Manufacturing defects in materials or workmanship</li>
+                    <li>Component failures under normal use</li>
+                </ul>
+                <h2>What's Not Covered</h2>
+                <ul>
+                    <li>Damage from accidents, misuse, or unauthorized modifications</li>
+                    <li>Normal wear and tear</li>
+                    <li>Damage caused by improper use or failure to follow product instructions</li>
+                </ul>
+                <h2>How to Make a Warranty Claim</h2>
+                <p>Contact us via our <a href="contact.html">contact page</a> with your order number and a description of the issue. We'll guide you through the repair, replacement, or refund process.</p>
+                <h2>Questions?</h2>
+                <p>If you're unsure whether your product is covered, get in touch through our <a href="contact.html">contact page</a> and we'll be happy to help.</p>
             </div>
         </div>
     </section>
@@ -140,14 +117,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Commerce X. All rights reserved | Designed with care</p>
+            <p>&copy; 2024 Commerce X. All rights reserved | Designed with care | <a href="privacy.html">Privacy Policy</a></p>
         </div>
     </footer>
 
     <script src="js/products.js"></script>
     <script src="js/cart.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/cart-page.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/footer-products.js"></script>
 </body>
 </html>

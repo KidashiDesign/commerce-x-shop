@@ -175,8 +175,7 @@ const PRODUCTS = [
         description: "Precision wireless mouse with ergonomic design and 18-month battery life.",
         image: "/src/black-wireless-computer-mouse-with-blue-light.png",
         images: [
-            "/src/black-wireless-computer-mouse-with-blue-light.png",
-            "/src/black-keyboard-with-letters-f-letters-f.png"
+            "/src/black-wireless-computer-mouse-with-blue-light.png"
         ],
         brand: "MouseTech",
         size: "2.8 x 4.2 x 1.6 inches",
@@ -240,8 +239,7 @@ const PRODUCTS = [
         description: "Multi-port USB-C hub with HDMI 4K support and 100W power delivery.",
         image: "/src/hdmi-cable.png",
         images: [
-            "/src/hdmi-cable.png",
-            "/src/flat-screen-monitor-isolated.png"
+            "/src/hdmi-cable.png"
         ],
         brand: "ConnectTech",
         size: "4.5 x 2.1 x 0.8 inches",
@@ -305,8 +303,7 @@ const PRODUCTS = [
     "description": "Powerful smartwatch featuring the S9 SiP chip, a brighter Always-On display, and magical double tap gesture control.",
     "image": "/src/modern-black-smartwatch-with-fabric-strap.png",
     "images": [
-        "/src/modern-black-smartwatch-with-fabric-strap.png",
-        "/src/apple-watch-s9-side-view.png"
+        "/src/modern-black-smartwatch-with-fabric-strap.png"
     ],
     "brand": "Apple",
     "size": "1.77 x 1.50 x 0.42 inches",

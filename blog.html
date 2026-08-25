@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Commerce X</title>
+    <title>Blog - Commerce X</title>
     <link rel="icon" type="image/svg+xml" href="images/x-commerce-bildmarke.svg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -16,9 +16,9 @@
             <a href="index.html" class="nav-logo"><img src="images/x-commerce-web.svg" alt="Commerce X Logo" class="nav-logo-img"></a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li class="nav-cart-item">
                     <a href="cart.html" class="nav-cart-link" aria-label="Shopping cart">
@@ -35,66 +35,33 @@
         </div>
     </nav>
 
-    <!-- Shop Header -->
-    <section class="shop-header">
+    <!-- Blog Header -->
+    <section class="contact-header">
         <div class="container">
-            <h1>Our Products</h1>
-            <p>Discover our complete collection of premium tech gadgets and accessories</p>
+            <h1>Our Blog</h1>
+            <p>Guides, comparisons and news from the world of tech gadgets and accessories</p>
         </div>
     </section>
 
-    <!-- Shop Content -->
-    <div class="shop-container">
-        <!-- Sidebar Filters -->
-        <aside class="shop-sidebar">
-            <div class="filter-group">
-                <h3>Categories</h3>
-                <label class="checkbox">
-                    <input type="checkbox" value="all" checked>
-                    <span>All Products</span>
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" value="technology">
-                    <span>Technology</span>
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" value="audio">
-                    <span>Audio</span>
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" value="gear">
-                    <span>Gear</span>
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" value="computers">
-                    <span>Computers</span>
-                </label>
+    <!-- Articles -->
+    <section class="articles">
+        <div class="container">
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('src/work.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3>How to create the perfect work from home setup</h3>
+                    <p>Learn the essential tips for creating an ergonomic and productive home office environment.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('src/alex.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3>Alexa vs Siri vs Google Home: Which smart assistant is the best?</h3>
+                    <p>A comprehensive comparison of the top smart home assistants on the market today.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
             </div>
-
-            <div class="filter-group">
-                <h3>Price Range</h3>
-                <input type="range" min="0" max="2000" value="2000" id="priceRange">
-                <p>Up to $<span id="priceValue">2000</span></p>
-            </div>
-
-            <div class="filter-group">
-                <h3>Sort By</h3>
-                <select id="sortBy">
-                    <option value="featured">Featured</option>
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="newest">Newest</option>
-                </select>
-            </div>
-        </aside>
-
-        <!-- Products Grid -->
-        <main class="shop-main">
-            <div class="products-grid" id="shopProducts">
-                <!-- Products loaded via JavaScript -->
-            </div>
-        </main>
-    </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -121,6 +88,7 @@
                 <h4>Company</h4>
                 <ul>
                     <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="terms.html">Terms of Service</a></li>
@@ -143,7 +111,7 @@
 
     <script src="js/products.js"></script>
     <script src="js/cart.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/shop.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/footer-products.js"></script>
 </body>
 </html>

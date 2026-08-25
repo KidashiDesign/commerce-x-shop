@@ -873,6 +873,10 @@ body {
     margin-bottom: 40px;
 }
 
+.blog-page .breadcrumb {
+    margin-bottom: 0;
+}
+
 .breadcrumb a {
     color: #2563eb;
     text-decoration: none;

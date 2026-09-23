@@ -1,0 +1,76 @@
+/* ============================================
+   BACK TO KIDASHI DESIGN - STICKY SIDE TAB
+   Fixed pill button, anchored to the left edge
+   of the viewport on every page of the site.
+   ============================================ */
+
+.kidashi-side-tab {
+    position: fixed;
+    top: 50%;
+    left: -26px;
+    transform: translateY(-50%);
+    z-index: 9999;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 14px 22px 14px 40px;
+
+    background-color: #CBCFAE;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kidashi-side-tab:hover,
+.kidashi-side-tab:focus-visible {
+    transform: translate(4px, -50%);
+    background-color: #B7BA9D;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.kidashi-side-tab:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: -4px;
+}
+
+.kidashi-side-tab__icon {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+}
+
+.kidashi-side-tab__text {
+    display: inline-block;
+}
+
+@media (max-width: 640px) {
+    .kidashi-side-tab {
+        left: -20px;
+        min-height: 44px;
+        padding: 11px 16px 11px 30px;
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .kidashi-side-tab__icon {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .kidashi-side-tab {
+        transition: none;
+    }
+}

@@ -29,12 +29,11 @@
     border-radius: 999px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 
-    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .kidashi-side-tab:hover,
 .kidashi-side-tab:focus-visible {
-    transform: translate(4px, -50%);
     background-color: #B7BA9D;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
 }

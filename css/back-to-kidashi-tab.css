@@ -2,6 +2,8 @@
    BACK TO KIDASHI DESIGN - STICKY SIDE TAB
    Fixed pill button, anchored to the left edge
    of the viewport on every page of the site.
+   The chevron button on its right edge folds
+   the link away, leaving just a small handle.
    ============================================ */
 
 .kidashi-side-tab {
@@ -11,11 +13,14 @@
     transform: translateY(-50%);
     z-index: 9999;
 
+    /* The pill starts 26px off-screen; this padding keeps its content
+       (and the folded handle) fully inside the viewport. */
+    box-sizing: border-box;
     display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    align-items: stretch;
     min-height: 48px;
-    padding: 14px 22px 14px 40px;
+    padding-left: 26px;
+    overflow: hidden;
 
     background-color: #CBCFAE;
     color: #ffffff;
@@ -24,24 +29,23 @@
     font-weight: 700;
     line-height: 1;
     white-space: nowrap;
-    text-decoration: none;
 
     border-radius: 999px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 
-    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.kidashi-side-tab:hover,
-.kidashi-side-tab:focus-visible {
-    transform: translate(4px, -50%);
-    background-color: #B7BA9D;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
-}
+.kidashi-side-tab__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 20em;
+    padding: 14px 18px 14px 14px;
+    color: inherit;
+    text-decoration: none;
 
-.kidashi-side-tab:focus-visible {
-    outline: 2px solid #ffffff;
-    outline-offset: -4px;
+    transition: max-width 0.3s ease, padding 0.3s ease, opacity 0.2s ease, background-color 0.25s ease;
 }
 
 .kidashi-side-tab__icon {
@@ -54,23 +58,100 @@
     display: inline-block;
 }
 
+.kidashi-side-tab__toggle {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    padding: 0;
+    border: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.55);
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+
+    transition: background-color 0.25s ease;
+}
+
+.kidashi-side-tab__chevron {
+    display: block;
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+.kidashi-side-tab__link:hover,
+.kidashi-side-tab__link:focus-visible,
+.kidashi-side-tab__toggle:hover,
+.kidashi-side-tab__toggle:focus-visible {
+    background-color: #B7BA9D;
+}
+
+.kidashi-side-tab__link:focus-visible,
+.kidashi-side-tab__toggle:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: -4px;
+}
+
+/* Slide nudge only on real pointers; on touch :hover sticks after a tap. */
+@media (hover: hover) {
+    .kidashi-side-tab:hover {
+        transform: translate(4px, -50%);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    }
+}
+
+/* Folded: only the handle stays. visibility is delayed until the slide has
+   finished so the hidden link also leaves the tab order and screen readers. */
+.kidashi-side-tab--collapsed .kidashi-side-tab__link {
+    max-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: max-width 0.3s ease, padding 0.3s ease, opacity 0.2s ease, visibility 0s linear 0.3s;
+}
+
+.kidashi-side-tab--collapsed .kidashi-side-tab__toggle {
+    border-left-color: transparent;
+}
+
+.kidashi-side-tab--collapsed .kidashi-side-tab__chevron {
+    transform: rotate(180deg);
+}
+
 @media (max-width: 640px) {
     .kidashi-side-tab {
         left: -20px;
         min-height: 44px;
-        padding: 11px 16px 11px 30px;
+        padding-left: 20px;
         font-size: 12px;
-        gap: 6px;
     }
 
-    .kidashi-side-tab__icon {
+    .kidashi-side-tab__link {
+        gap: 6px;
+        padding: 11px 14px 11px 10px;
+    }
+
+    .kidashi-side-tab__icon,
+    .kidashi-side-tab__chevron {
         width: 12px;
         height: 12px;
+    }
+
+    .kidashi-side-tab__toggle {
+        width: 34px;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .kidashi-side-tab {
+    .kidashi-side-tab,
+    .kidashi-side-tab__link,
+    .kidashi-side-tab__toggle,
+    .kidashi-side-tab__chevron,
+    .kidashi-side-tab--collapsed .kidashi-side-tab__link {
         transition: none;
     }
 }

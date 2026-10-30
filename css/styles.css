@@ -10,6 +10,14 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
 }
 
 body {
@@ -198,11 +206,31 @@ body {
 
 .why-text .btn-secondary {
     margin-left: 0;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.85);
+}
+
+.why-text .btn-secondary:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #1f2937;
 }
 
 .btn-secondary:hover {
     background: #2563eb;
     color: white;
+}
+
+/* Sekundär-Button auf dunklem Hero-Hintergrund: ausreichend Kontrast */
+.hero .btn-secondary {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.85);
+}
+
+.hero .btn-secondary:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #1f2937;
 }
 
 .btn-lg {
@@ -1278,6 +1306,10 @@ body {
     gap: 60px;
 }
 
+.contact-form-wrapper h2 {
+    margin-bottom: 24px;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -1472,6 +1504,105 @@ body {
         margin-left: 0;
         margin-top: 10px;
         display: block;
+        text-align: center;
+    }
+
+    /* "Read More" bündig mit dem Kartentext (Padding statt doppeltem Einzug) */
+    .read-more {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Hero: Buttons gleich breit untereinander, Text mittig lesbar */
+    .hero .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+        margin-bottom: 24px;
+    }
+
+    /* Überschriften: kompaktere Größe und Zeilenhöhe */
+    .categories h2,
+    .articles h2,
+    .why-text h2 {
+        font-size: 1.9em;
+        line-height: 1.25;
+        margin-bottom: 30px;
+    }
+
+    .newsletter h2 {
+        font-size: 1.6em;
+        line-height: 1.25;
+        margin-bottom: 24px;
+    }
+
+    .categories,
+    .articles {
+        padding: 56px 0;
+    }
+
+    .category-grid,
+    .articles-grid {
+        gap: 20px;
+    }
+
+    .category-card {
+        padding: 28px 24px;
+    }
+
+    .why-different {
+        padding: 60px 0;
+    }
+
+    .why-text p {
+        font-size: 1em;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    .why-logo {
+        width: 160px;
+        height: auto;
+    }
+
+    .newsletter {
+        padding: 48px 0;
+    }
+
+    .newsletter-form input,
+    .newsletter-form .btn {
+        width: 100%;
+    }
+
+    .article-image {
+        height: 200px;
+    }
+
+    .contact-info {
+        padding: 24px;
+    }
+
+    /* Footer: Link-Spalten zweispaltig, Marke über die volle Breite */
+    .footer {
+        padding: 48px 0 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 24px;
+        padding: 0 20px;
+    }
+
+    .footer-container .footer-section:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        padding: 24px 20px 0;
     }
 }
 
@@ -1499,5 +1630,15 @@ body {
 
     .nav-logo {
         font-size: 1.2em;
+    }
+
+    .nav-logo-img {
+        height: 28px;
+    }
+
+    .categories h2,
+    .articles h2,
+    .why-text h2 {
+        font-size: 1.7em;
     }
 }

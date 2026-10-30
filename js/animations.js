@@ -9,6 +9,12 @@
  */
 
 function initBlurHoverAnimations() {
+    // On mobile the blur is driven by scroll position instead of hover/touch
+    if (isMobileViewport()) {
+        updateScrollBlur();
+        return;
+    }
+
     const productCards = document.querySelectorAll('.product-card');
 
     productCards.forEach(card => {
@@ -55,6 +61,66 @@ function applyBlur(image) {
     image.style.filter = 'blur(8px)';
     image.style.opacity = '0.6';
 }
+
+// ============================================
+// MOBILE SCROLL BLUR
+// ============================================
+
+const mobileQuery = window.matchMedia('(max-width: 768px)');
+const MAX_BLUR = 8;
+const MIN_OPACITY = 0.6;
+// Share of the half viewport height around the center where the image stays fully sharp
+const SHARP_ZONE = 0.2;
+let scrollBlurTicking = false;
+
+function isMobileViewport() {
+    return mobileQuery.matches;
+}
+
+function smoothstep(t) {
+    const x = Math.min(1, Math.max(0, t));
+    return x * x * (3 - 2 * x);
+}
+
+/**
+ * Blur each product image depending on its distance from the viewport center:
+ * blurred when entering, sharp in the middle, blurred again when leaving.
+ */
+function updateScrollBlur() {
+    scrollBlurTicking = false;
+    if (!isMobileViewport()) return;
+
+    const viewportHeight = window.innerHeight;
+    const center = viewportHeight / 2;
+
+    document.querySelectorAll('.product-card .product-image img').forEach(image => {
+        const rect = image.getBoundingClientRect();
+        const distance = Math.abs(rect.top + rect.height / 2 - center) / center;
+        const amount = smoothstep((distance - SHARP_ZONE) / (1 - SHARP_ZONE));
+
+        image.style.filter = `blur(${(amount * MAX_BLUR).toFixed(2)}px)`;
+        image.style.opacity = (1 - amount * (1 - MIN_OPACITY)).toFixed(2);
+    });
+}
+
+function requestScrollBlurUpdate() {
+    if (scrollBlurTicking) return;
+    scrollBlurTicking = true;
+    requestAnimationFrame(updateScrollBlur);
+}
+
+window.addEventListener('scroll', requestScrollBlurUpdate, { passive: true });
+window.addEventListener('resize', requestScrollBlurUpdate);
+window.addEventListener('load', updateScrollBlur);
+
+// Back to hover behavior (blurred by default) when leaving the mobile layout
+mobileQuery.addEventListener('change', () => {
+    if (isMobileViewport()) {
+        updateScrollBlur();
+    } else {
+        document.querySelectorAll('.product-card .product-image img').forEach(applyBlur);
+    }
+});
 
 // ============================================
 // SCROLL ANIMATIONS

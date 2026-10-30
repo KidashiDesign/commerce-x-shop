@@ -379,6 +379,21 @@
                 transform 0.3s ease;
 }
 
+/* Mobile: blur follows the scroll position (set via JS), so use a short
+   linear transition instead of the bouncy hover easing */
+@media (max-width: 768px) {
+    .product-image img,
+    .product-card:hover .product-image img {
+        transition: filter 0.12s linear,
+                    opacity 0.12s linear;
+        will-change: filter, opacity;
+    }
+
+    .product-card:hover .product-image img {
+        transform: none;
+    }
+}
+
 /* ============================================
    ACCESSIBILITY
    ============================================ */
